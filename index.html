@@ -1,0 +1,30 @@
+---
+title: Home
+layout: default
+---
+
+<h1>{{ "Ruby for Instance" }}</h1>
+<h1>Latest Posts</h1>
+<div id="posts">
+  <p></p>
+  <h3>
+    <a
+      href="https://www.ruby-lang.org"
+      rel="noopener noreferrer"
+      target="_blank"
+      class="third-importance"
+      >Ruby</a
+    >
+    is a programming language that focuses on simplicity. It values developer
+    time and rapid prototyping.
+    <br /><br />
+    Ruby for Instance is a quick overview of the Ruby language features.
+  </h3>
+  <ul class="li-posts-parent">
+    {% for post in site.posts %}
+    <li class="li-posts">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
