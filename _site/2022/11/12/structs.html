@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A quick walkthrough of Ruby's language features"
+    />
+    <meta name="keywords" content="Ruby, Jekyll" />
+    <meta name="author" content="dfxe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+    <link rel="shortcut icon" href="/favicon.svg" />
+    <title>Structs</title>
+  </head>
+  <body>
+    <div id="post-container">
+  <h1><a href="/">Ruby for Instance</a> / Structs</h1>
+
+  <div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define a struct and create an instance of it</span>
+<span class="no">Person</span> <span class="o">=</span> <span class="no">Struct</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:age</span><span class="p">)</span>
+<span class="n">bob</span> <span class="o">=</span> <span class="no">Person</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+
+<span class="c1"># Define a struct and access its fields</span>
+<span class="no">Person</span> <span class="o">=</span> <span class="no">Struct</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:age</span><span class="p">)</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="nf">greet</span>
+    <span class="s2">"Hello, my name is </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2"> and I am </span><span class="si">#{</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old."</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">bob</span> <span class="o">=</span> <span class="no">Person</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">bob</span><span class="p">.</span><span class="nf">greet</span>
+
+<span class="c1"># Define a struct and add methods to it</span>
+<span class="no">Person</span> <span class="o">=</span> <span class="no">Struct</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:age</span><span class="p">)</span> <span class="k">do</span>
+  <span class="k">def</span> <span class="nf">greet</span>
+    <span class="s2">"Hello, my name is </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2"> and I am </span><span class="si">#{</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old."</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">increment_age</span>
+    <span class="nb">self</span><span class="p">.</span><span class="nf">age</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">bob</span> <span class="o">=</span> <span class="no">Person</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="n">bob</span><span class="p">.</span><span class="nf">increment_age</span>
+<span class="nb">puts</span> <span class="n">bob</span><span class="p">.</span><span class="nf">age</span>
+</code></pre></div></div>
+
+<p><a href="https://onecompiler.com/ruby/3yh7dhbz9">Try on playground</a></p>
+
+<p>Next: <a href="/2022/11/01/interfaces.html">values</a></p>
+
+
+  <div>
+    <p>by <a href="https://www.github.com/dfxe">dfxe</a> / source / license</p>
+  </div>
+</div>
+
+  </body>
+</html>

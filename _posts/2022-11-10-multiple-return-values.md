@@ -14,3 +14,7 @@ def users_info(names, ages)
   names.zip(ages).map { |name, age| Struct.new(:name, :age).new(name, age) }
 end
 ```
+
+[Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
+
+Next: [values](/2022/11/01/closures.html)

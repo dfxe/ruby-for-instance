@@ -28,4 +28,4 @@ PI = 3.14 # This will throw an error
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
 
-Next: [values](/2022/11/01/values.html)
+Next: [values](/2022/11/01/if-else.html)

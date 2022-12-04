@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A quick walkthrough of Ruby's language features"
+    />
+    <meta name="keywords" content="Ruby, Jekyll" />
+    <meta name="author" content="dfxe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+    <link rel="shortcut icon" href="/favicon.svg" />
+    <title>Conversions</title>
+  </head>
+  <body>
+    <div id="post-container">
+  <h1><a href="/">Ruby for Instance</a> / Conversions</h1>
+
+  <div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># integer to string</span>
+<span class="n">number</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="n">string</span> <span class="o">=</span> <span class="n">number</span><span class="p">.</span><span class="nf">to_s</span>
+<span class="c1"># =&gt; "42"</span>
+
+<span class="c1"># string to integer</span>
+<span class="n">string</span> <span class="o">=</span> <span class="s2">"42"</span>
+<span class="n">number</span> <span class="o">=</span> <span class="n">string</span><span class="p">.</span><span class="nf">to_i</span>
+<span class="c1"># =&gt; 42</span>
+
+<span class="c1"># string to float</span>
+<span class="n">string</span> <span class="o">=</span> <span class="s2">"3.1415"</span>
+<span class="n">number</span> <span class="o">=</span> <span class="n">string</span><span class="p">.</span><span class="nf">to_f</span>
+<span class="c1"># =&gt; 3.1415</span>
+
+<span class="c1"># array to hash</span>
+<span class="n">array</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"key"</span><span class="p">,</span> <span class="s2">"value"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"another_key"</span><span class="p">,</span> <span class="s2">"another_value"</span><span class="p">]]</span>
+<span class="nb">hash</span> <span class="o">=</span> <span class="no">Hash</span><span class="p">[</span><span class="n">array</span><span class="p">]</span>
+<span class="c1"># =&gt; {"key"=&gt;"value", "another_key"=&gt;"another_value"}</span>
+
+<span class="c1"># hash to array</span>
+<span class="nb">hash</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"key"</span><span class="o">=&gt;</span><span class="s2">"value"</span><span class="p">,</span> <span class="s2">"another_key"</span><span class="o">=&gt;</span><span class="s2">"another_value"</span><span class="p">}</span>
+<span class="n">array</span> <span class="o">=</span> <span class="nb">hash</span><span class="p">.</span><span class="nf">to_a</span>
+<span class="c1"># =&gt; [["key", "value"], ["another_key", "another_value"]]</span>
+
+<span class="c1"># string to array</span>
+<span class="n">string</span> <span class="o">=</span> <span class="s2">"hello world"</span>
+<span class="n">array</span> <span class="o">=</span> <span class="n">string</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>
+<span class="c1"># =&gt; ["hello", "world"]</span>
+</code></pre></div></div>
+
+
+  <div>
+    <p>by <a href="https://www.github.com/dfxe">dfxe</a> / source / license</p>
+  </div>
+</div>
+
+  </body>
+</html>

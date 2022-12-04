@@ -12,27 +12,28 @@
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <link rel="stylesheet" href="/assets/css/syntax.css" />
     <link rel="shortcut icon" href="/favicon.svg" />
-    <title>If Else</title>
+    <title>Switch</title>
   </head>
   <body>
     <div id="post-container">
-  <h1><a href="/">Ruby for Instance</a> / If Else</h1>
+  <h1><a href="/">Ruby for Instance</a> / Switch</h1>
 
   <div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define a variable</span>
-<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">x</span> <span class="o">=</span> <span class="s2">"hello"</span>
 
-<span class="c1"># Use the if statement to check if x is greater than 5</span>
-<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span>
-  <span class="nb">puts</span> <span class="s2">"x is greater than 5"</span>
-<span class="k">elsif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">5</span>
-  <span class="nb">puts</span> <span class="s2">"x is equal to 5"</span>
+<span class="c1"># Use the case statement to compare x against several cases</span>
+<span class="k">case</span> <span class="n">x</span>
+<span class="k">when</span> <span class="s2">"hello"</span>
+  <span class="nb">puts</span> <span class="s2">"x is hello"</span>
+<span class="k">when</span> <span class="s2">"world"</span>
+  <span class="nb">puts</span> <span class="s2">"x is world"</span>
 <span class="k">else</span>
- <span class="nb">puts</span> <span class="s2">"x is not greater than 5"</span>
+  <span class="nb">puts</span> <span class="s2">"x is something else"</span>
 <span class="k">end</span>
 </code></pre></div></div>
 <p><a href="https://onecompiler.com/ruby/3yh7dhbz9">Try on playground</a></p>
 
-<p>Next: <a href="/2022/11/01/switch.html">values</a></p>
+<p>Next: <a href="/2022/11/01/arrays.html">values</a></p>
 
 
   <div>

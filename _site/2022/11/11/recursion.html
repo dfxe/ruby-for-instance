@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A quick walkthrough of Ruby's language features"
+    />
+    <meta name="keywords" content="Ruby, Jekyll" />
+    <meta name="author" content="dfxe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+    <link rel="shortcut icon" href="/favicon.svg" />
+    <title>Recursion</title>
+  </head>
+  <body>
+    <div id="post-container">
+  <h1><a href="/">Ruby for Instance</a> / Recursion</h1>
+
+  <div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define a recursive function that computes the factorial of a number</span>
+<span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+  <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="c1"># Define a recursive function that computes the sum of the elements in an array</span>
+<span class="k">def</span> <span class="nf">sum</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+  <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">array</span><span class="p">.</span><span class="nf">empty?</span>
+  <span class="n">array</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">sum</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="mi">1</span><span class="o">..-</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">end</span>
+
+<span class="c1"># Define a recursive function that finds the maximum value in an array</span>
+<span class="k">def</span> <span class="nf">max</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">array</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">array</span><span class="p">.</span><span class="nf">size</span> <span class="o">==</span> <span class="mi">1</span>
+  <span class="p">[</span><span class="n">array</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">max</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="mi">1</span><span class="o">..-</span><span class="mi">1</span><span class="p">])].</span><span class="nf">max</span>
+<span class="k">end</span>
+
+</code></pre></div></div>
+
+<p><a href="https://onecompiler.com/ruby/3yh7dhbz9">Try on playground</a></p>
+
+<p>Next: <a href="/2022/11/01/variadic-functions.html">values</a></p>
+
+
+  <div>
+    <p>by <a href="https://www.github.com/dfxe">dfxe</a> / source / license</p>
+  </div>
+</div>
+
+  </body>
+</html>

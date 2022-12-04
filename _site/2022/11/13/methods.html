@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A quick walkthrough of Ruby's language features"
+    />
+    <meta name="keywords" content="Ruby, Jekyll" />
+    <meta name="author" content="dfxe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+    <link rel="shortcut icon" href="/favicon.svg" />
+    <title>Methods</title>
+  </head>
+  <body>
+    <div id="post-container">
+  <h1><a href="/">Ruby for Instance</a> / Methods</h1>
+
+  <div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define a method on a class</span>
+<span class="k">class</span> <span class="nc">MyClass</span>
+  <span class="k">def</span> <span class="nf">my_method</span>
+    <span class="nb">puts</span> <span class="s2">"Hello, world!"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="c1"># Define a method on an instance of a class</span>
+<span class="k">class</span> <span class="nc">MyClass</span>
+  <span class="k">def</span> <span class="nf">my_method</span>
+    <span class="nb">puts</span> <span class="s2">"Hello, world!"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">my_obj</span> <span class="o">=</span> <span class="no">MyClass</span><span class="p">.</span><span class="nf">new</span>
+<span class="k">def</span> <span class="nc">my_obj</span><span class="o">.</span><span class="nf">my_method</span>
+  <span class="nb">puts</span> <span class="s2">"Hello, world!"</span>
+<span class="k">end</span>
+
+<span class="c1"># Define a method using the self keyword</span>
+<span class="k">class</span> <span class="nc">MyClass</span>
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">my_method</span>
+    <span class="nb">puts</span> <span class="s2">"Hello, world!"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p><a href="https://onecompiler.com/ruby/3yh7dhbz9">Try on playground</a></p>
+
+<p>Next: <a href="/2022/11/01/sorting.html">values</a></p>
+
+
+  <div>
+    <p>by <a href="https://www.github.com/dfxe">dfxe</a> / source / license</p>
+  </div>
+</div>
+
+  </body>
+</html>

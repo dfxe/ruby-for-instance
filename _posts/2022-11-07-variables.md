@@ -30,4 +30,6 @@ fruit = :apple
 range = 1..10
 ```
 
-Next: [constants]()
+[Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
+
+Next: [values](/2022/11/01/constants.html)

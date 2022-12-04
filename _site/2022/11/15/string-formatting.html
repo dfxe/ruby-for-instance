@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A quick walkthrough of Ruby's language features"
+    />
+    <meta name="keywords" content="Ruby, Jekyll" />
+    <meta name="author" content="dfxe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+    <link rel="shortcut icon" href="/favicon.svg" />
+    <title>String Formatting</title>
+  </head>
+  <body>
+    <div id="post-container">
+  <h1><a href="/">Ruby for Instance</a> / String Formatting</h1>
+
+  <div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define a string with placeholder symbols</span>
+<span class="n">template</span> <span class="o">=</span> <span class="s2">"Hello, %s! Today is %s."</span>
+
+<span class="c1"># Use the % method to insert values into the string</span>
+<span class="n">formatted_string</span> <span class="o">=</span> <span class="n">template</span> <span class="o">%</span> <span class="p">[</span><span class="s2">"world"</span><span class="p">,</span> <span class="s2">"Monday"</span><span class="p">]</span>
+<span class="c1"># =&gt; "Hello, world! Today is Monday."</span>
+
+<span class="c1"># Define a string with placeholder symbols and indexed placeholders</span>
+<span class="n">template</span> <span class="o">=</span> <span class="s2">"Hello, %s! Today is %s. You are the %{index}th person to visit today."</span>
+
+<span class="c1"># Use the format method to insert values into the string</span>
+<span class="n">formatted_string</span> <span class="o">=</span> <span class="n">template</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="s2">"world"</span><span class="p">,</span> <span class="s2">"Monday"</span><span class="p">,</span> <span class="ss">index: </span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># =&gt; "Hello, world! Today is Monday. You are the 1th person to visit today."</span>
+
+<span class="c1"># Define a string</span>
+<span class="n">string</span> <span class="o">=</span> <span class="s2">"Hello, hello! Is anyone there?"</span>
+
+<span class="c1"># Use the gsub method to replace all occurrences of "hello" with "world"</span>
+<span class="n">formatted_string</span> <span class="o">=</span> <span class="n">string</span><span class="p">.</span><span class="nf">gsub</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">,</span> <span class="s2">"world"</span><span class="p">)</span>
+<span class="c1"># =&gt; "World, world! Is anyone there?"</span>
+</code></pre></div></div>
+
+
+  <div>
+    <p>by <a href="https://www.github.com/dfxe">dfxe</a> / source / license</p>
+  </div>
+</div>
+
+  </body>
+</html>

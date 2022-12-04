@@ -27,3 +27,8 @@ xml = Nokogiri::XML(xml_data)
 puts xml.at("hello").text
 # => "world"
 ```
+
+
+[Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
+
+Next: [values](/2022/11/01/epoch.html)

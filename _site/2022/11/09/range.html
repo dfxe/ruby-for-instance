@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A quick walkthrough of Ruby's language features"
+    />
+    <meta name="keywords" content="Ruby, Jekyll" />
+    <meta name="author" content="dfxe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+    <link rel="shortcut icon" href="/favicon.svg" />
+    <title>Range</title>
+  </head>
+  <body>
+    <div id="post-container">
+  <h1><a href="/">Ruby for Instance</a> / Range</h1>
+
+  <div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define a range of numbers</span>
+<span class="n">range1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">..</span><span class="mi">10</span>
+
+<span class="c1"># Define a range of letters</span>
+<span class="n">range2</span> <span class="o">=</span> <span class="s2">"a"</span><span class="o">..</span><span class="s2">"z"</span>
+
+<span class="c1"># Define a range with non-inclusive end</span>
+<span class="n">range3</span> <span class="o">=</span> <span class="mi">1</span><span class="o">...</span><span class="mi">10</span>
+
+<span class="c1"># Define a range of dates</span>
+<span class="n">range4</span> <span class="o">=</span> <span class="no">Date</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">..</span><span class="no">Date</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+
+<span class="c1"># Define a range of times</span>
+<span class="n">range5</span> <span class="o">=</span> <span class="no">Time</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span><span class="o">..</span><span class="no">Time</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">59</span><span class="p">)</span>
+
+<span class="c1"># Define a range with a step value</span>
+<span class="n">range6</span> <span class="o">=</span> <span class="mi">1</span><span class="o">..</span><span class="mi">10</span><span class="p">.</span><span class="nf">step</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Define a range with a custom object as the end point</span>
+<span class="n">range7</span> <span class="o">=</span> <span class="mi">1</span><span class="o">..</span><span class="no">MyObject</span><span class="p">.</span><span class="nf">new</span>
+
+<span class="c1"># Define a range with a floating point end point</span>
+<span class="n">range8</span> <span class="o">=</span> <span class="mi">1</span><span class="o">..</span><span class="mf">10.5</span>
+
+<span class="c1"># Define a range with a negative step value</span>
+<span class="n">range9</span> <span class="o">=</span> <span class="mi">10</span><span class="o">..</span><span class="mi">1</span><span class="p">.</span><span class="nf">step</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Define an empty range</span>
+<span class="n">range10</span> <span class="o">=</span> <span class="mi">1</span><span class="o">..</span><span class="mi">1</span>
+</code></pre></div></div>
+
+<p><a href="https://onecompiler.com/ruby/3yh7dhbz9">Try on playground</a></p>
+
+<p>Next: <a href="/2022/11/01/functions.html">values</a></p>
+
+
+  <div>
+    <p>by <a href="https://www.github.com/dfxe">dfxe</a> / source / license</p>
+  </div>
+</div>
+
+  </body>
+</html>

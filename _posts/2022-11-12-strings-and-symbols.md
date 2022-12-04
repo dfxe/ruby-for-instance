@@ -11,3 +11,7 @@ my_string = my_symbol.to_s
 my_symbol = :hello
 puts my_symbol
 ```
+
+[Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
+
+Next: [values](/2022/11/01/structs.html)

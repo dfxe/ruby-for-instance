@@ -46,3 +46,7 @@ class MyClass
   include MyMixin
 end
 ```
+
+[Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
+
+Next: [values](/2022/11/01/errors.html)
