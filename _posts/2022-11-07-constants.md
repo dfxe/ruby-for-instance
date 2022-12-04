@@ -18,6 +18,13 @@ You can start off running in Ruby.
 | Ruby files have the .rb extension. You can run them instantly as they do not have a compilation step. | `ruby hello-world.rb`    |
 
 
+```rb
+# Define a constant
+PI = 3.14159
+
+# Try to change the value of the constant
+PI = 3.14 # This will throw an error
+```
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
 

@@ -56,3 +56,6 @@ code {
   padding-inline-end: 0.5ch;
 }
 */
+code > *  { 
+  font-family: monospace; 
+}
