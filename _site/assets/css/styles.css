@@ -5,10 +5,7 @@
 * {
   font-family: -system-font, sans-serif;
 }
-.current {
-  color: green;
-  text-decoration: none;
-}
+
 body {
   display: flex;
   flex-direction: column;
@@ -28,10 +25,7 @@ body {
   text-decoration: none;
   
 }
-.li-posts > h2 {
-  margin: 0;
-  margin-bottom: 0;
-}
+
 
 tbody {
   display: table-row-group;
