@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Source+Sans+Pro&display=swap");
 :root {
   --code-background-color: lightpink;
   --output-background-color: lightgray;
@@ -35,7 +36,7 @@ body {
 tbody {
   display: table-row-group;
 }
-td > em {
+/* td > em {
   font-family: "Fira Mono", monospace;
   color: grey;
   background-color: var(--output-background-color);
@@ -56,3 +57,4 @@ code {
   padding-inline-start: 0.5ch;
   padding-inline-end: 0.5ch;
 }
+ */
