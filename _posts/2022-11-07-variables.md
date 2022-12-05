@@ -32,4 +32,4 @@ range = 1..10
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
 
-Next: [values](/2022/11/01/constants.html)
+Next: [values](/2022/11/07/constants.html)

@@ -18,4 +18,4 @@ end
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
 
-Next: [values](/2022/11/01/strings-and-symbols.html)
+Next: [values](/2022/11/12/strings-and-symbols.html)
