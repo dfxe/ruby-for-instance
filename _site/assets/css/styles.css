@@ -7,6 +7,8 @@
 
 }
 
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,9 @@ body {
   justify-content: center;
   
 }
-
+.breadcrumbs{
+  font-size: large;
+}
 .li-posts-parent {
   list-style-type: none;
   padding: 0;
@@ -30,7 +34,11 @@ body {
   
 }
 
-
+#post-content{
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+}
  @media screen and (min-width: 1024px) {
   #posts{
   max-width: 30vw;
