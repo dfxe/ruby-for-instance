@@ -29,3 +29,7 @@ string = "hello world"
 array = string.split(" ")
 # => ["hello", "world"]
 ```
+
+[Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
+
+Next: [values](/2022/11/15/string-formatting.html)
