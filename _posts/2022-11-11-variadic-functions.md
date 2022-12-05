@@ -20,4 +20,4 @@ end
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
 
-Next: [values](/2022/11/12/strings-and-runes.html)
+Next: [strings and runes](/2022/11/12/strings-and-runes.html)

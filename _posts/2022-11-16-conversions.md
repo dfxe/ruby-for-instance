@@ -32,4 +32,4 @@ array = string.split(" ")
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
 
-Next: [values](/2022/11/15/string-formatting.html)
+Next: [string formatting](/2022/11/15/string-formatting.html)

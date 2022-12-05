@@ -14,4 +14,4 @@ puts my_symbol
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
 
-Next: [values](/2022/11/12/structs.html)
+Next: [structs](/2022/11/12/structs.html)

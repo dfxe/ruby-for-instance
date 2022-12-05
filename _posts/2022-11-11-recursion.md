@@ -20,4 +20,4 @@ end
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
 
-Next: [values](/2022/11/11/variadic-functions.html)
+Next: [variadic functions](/2022/11/11/variadic-functions.html)

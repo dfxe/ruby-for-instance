@@ -20,3 +20,5 @@ string = "Hello, hello! Is anyone there?"
 formatted_string = string.gsub("hello", "world")
 # => "World, world! Is anyone there?"
 ```
+
+[Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)

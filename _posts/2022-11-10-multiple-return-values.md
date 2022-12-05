@@ -17,4 +17,4 @@ end
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
 
-Next: [values](/2022/11/11/closures.html)
+Next: [closures](/2022/11/11/closures.html)

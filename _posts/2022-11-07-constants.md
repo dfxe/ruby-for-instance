@@ -13,4 +13,4 @@ PI = 3.14 # This will throw an error
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
 
-Next: [values](/2022/11/08/if-else.html)
+Next: [if else](/2022/11/08/if-else.html)

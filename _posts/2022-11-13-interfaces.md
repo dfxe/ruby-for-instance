@@ -49,4 +49,4 @@ end
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
 
-Next: [values](/2022/11/13/errors.html)
+Next: [errors](/2022/11/13/errors.html)
