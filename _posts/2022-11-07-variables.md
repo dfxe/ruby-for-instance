@@ -3,7 +3,7 @@ layout: post
 author: dfxe
 ---
 
-```
+```rb
 # Define a variable with a string value
 name = "John"
 
