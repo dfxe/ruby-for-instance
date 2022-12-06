@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A quick walkthrough of Ruby's language features"
+    />
+    <meta name="keywords" content="Ruby, Jekyll" />
+    <meta name="author" content="dfxe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/syntax.css" />
+    <link rel="shortcut icon" href="/favicon.svg" />
+    <title>Read And Write</title>
+  </head>
+  <body>
+    
+    <h1 class="breadcrumbs"><a id="post-title" href="/">Ruby for Instance</a> / Read And Write</h1>
+<div id="post-content">
+
+  <div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Open the file in read-only mode and store the file object in a variable</span>
+<span class="n">file</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="s1">'my-file.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
+
+<span class="c1"># Read the contents of the file and store them in a variable</span>
+<span class="n">file_contents</span> <span class="o">=</span> <span class="n">file</span><span class="p">.</span><span class="nf">read</span>
+
+<span class="c1"># Print the contents of the file to the terminal</span>
+<span class="nb">puts</span> <span class="n">file_contents</span>
+
+<span class="c1"># Close the file</span>
+<span class="n">file</span><span class="p">.</span><span class="nf">close</span>
+
+<span class="c1"># Open the file in write mode and store the file object in a variable</span>
+<span class="n">file</span> <span class="o">=</span> <span class="no">File</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="s1">'my-file.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
+
+<span class="c1"># Write some text to the file</span>
+<span class="n">file</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="s1">'Hello, world!'</span><span class="p">)</span>
+
+<span class="c1"># Close the file</span>
+<span class="n">file</span><span class="p">.</span><span class="nf">close</span>
+</code></pre></div></div>
+
+
+  <div>
+    <p>by <a href="https://www.github.com/dfxe">dfxe</a> / source / license</p>
+  </div>
+</div>
+
+  </body>
+</html>
