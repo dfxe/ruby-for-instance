@@ -2,7 +2,7 @@
 title: Home
 layout: default
 ---
-
+{% assign reversed_posts = site.posts | reverse %}
 <h1>{{ "Ruby for Instance" }}</h1>
 <div id="posts">
   <div>
@@ -19,7 +19,7 @@ layout: default
     <strong>Ruby for Instance is a snippet notebook with the Ruby language features.</strong>
   </div>
   <ul class="li-posts-parent">
-    {% for post in site.posts %}
+    {% for post in reversed_posts %}
     <li class="li-posts">
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
