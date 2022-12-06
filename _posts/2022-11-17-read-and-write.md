@@ -1,3 +1,8 @@
+---
+layout: post
+author: dfxe
+---
+
 ```rb
 # Open the file in read-only mode and store the file object in a variable
 file = File.open('my-file.txt', 'r')

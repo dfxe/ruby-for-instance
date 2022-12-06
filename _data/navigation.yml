@@ -1,4 +1,4 @@
-- name: Home
+- name: Ruby for instance
   link: /
 - markdown: kramdown
 - highlighter: rouge
