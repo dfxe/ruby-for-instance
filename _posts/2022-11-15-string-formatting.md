@@ -22,3 +22,5 @@ formatted_string = string.gsub("hello", "world")
 ```
 
 [Try on playground](https://onecompiler.com/ruby/3yh7dhbz9)
+
+Next: [command line](/2022/11/15/command-line.html)

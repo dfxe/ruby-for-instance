@@ -1,7 +1,13 @@
 @font-face {
-  font-family: "Syne";
+  font-family: "Syne Bold";
   src: url("../fonts/static/Syne-Bold.ttf");
   font-weight: bold;
+  font-style: normal;
+}
+@font-face{
+   font-family: "Syne Medium";
+  src: url("../fonts/static/Syne-Medium.ttf");
+  font-weight: medium;
   font-style: normal;
 }
 :root {
@@ -9,7 +15,9 @@
   --output-background-color: lightgray;
 }
 
-
+h1{
+  font-family: "Syne Bold", sans-serif;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -18,9 +26,7 @@ body {
   background-image: url( '../images/nnnoise.svg' );
  
   background-position: top left;
-}
-h1{
-  font-family: "Syne", sans-serif;
+   font-family: "Syne Medium", sans-serif;
 }
 .breadcrumbs{
   font-size: large;
