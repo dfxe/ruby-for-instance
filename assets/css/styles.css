@@ -13,11 +13,13 @@
 :root {
   --code-background-color: lightpink;
   --output-background-color: lightgray;
+  
 }
 
 h1{
   font-family: "Syne Bold", sans-serif;
-  font-size: large;
+  font-size: x-large;
+  
 }
 body {
   display: flex;
@@ -30,7 +32,7 @@ body {
    font-family: "Syne Medium", sans-serif;
 }
 .breadcrumbs{
-  font-size: large;
+  font-size: x-large;
 }
 .li-posts-parent {
   list-style-type: none;
