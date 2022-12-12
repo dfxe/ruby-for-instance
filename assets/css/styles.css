@@ -17,6 +17,7 @@
 
 h1{
   font-family: "Syne Bold", sans-serif;
+  font-size: large;
 }
 body {
   display: flex;
