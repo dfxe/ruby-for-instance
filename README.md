@@ -1,5 +1,5 @@
 # Ruby for instance
-Quick walkthrough of the ruby language. Made with Jekyll.
+Quick walkthrough of some of Ruby's features. Made with Jekyll.
 
 [**Try out the demo!**](https://ruby-mid.pages.dev/)
 
